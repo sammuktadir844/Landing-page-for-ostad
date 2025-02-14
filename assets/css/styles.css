@@ -1,0 +1,178 @@
+:root {
+  --main-color: #00adb5;
+  --bg-color: #222831;
+  --text-color: #eee;
+  --field-color: #2e333b;
+  --placeholder-color: #82858a;
+  --btn-color: #333840;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* buttons */
+
+.btn {
+  position: relative;
+  padding: 10px 32px;
+  border-radius: 24px;
+}
+
+.btn.light {
+  background-color: var(--main-color);
+}
+
+.btn.dark {
+  background-color: var(--btn-color);
+}
+
+/* .btn.download-icon::after {
+  content: url("../images/download.svg");
+  position: absolute;
+  right: 32px;
+  margin-left: 10px;
+  vertical-align: middle;
+  top: 50%;
+  transform: translateY(-40%);
+} */
+
+/* NAVBAR DESIGN */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eeeeee;
+}
+.navbar {
+  padding: 48px 0;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.nav-item .nav-link {
+  color: var(--text-color);
+}
+
+.navbar-toggler {
+  background-color: var(--btn-color);
+  /* color: #ffffff; */
+}
+
+/* HERO SECTION DESIGN */
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 120px 0;
+}
+.heading {
+  font-size: 96px;
+  font-weight: bold;
+}
+.sub-heading {
+  color: #00adb5;
+}
+.buttons {
+  display: flex;
+  gap: 24px;
+}
+.buttons button {
+  color: #eeeeee;
+}
+.down_arrow {
+  margin-left: 300px;
+}
+.down_arrow img {
+  cursor: pointer;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 120px 0;
+  /* flex-wrap: wrap;
+  flex-basis: 50%; */
+}
+.me {
+  color: var(--main-color);
+}
+.read-more {
+  font-weight: bold;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  background: url("background-pattern.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #00d1d1; /* Highlighted color */
+}
+
+.filter-buttons .btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: 500;
+}
+
+.filter-buttons .btn.active {
+  background-color: #00d1d1;
+  color: white;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+/* CONTACT SECTION */
+/* FOOTER SECTION */
