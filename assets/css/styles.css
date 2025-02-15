@@ -312,3 +312,343 @@ p {
   margin-top: 20px;
   font-size: 14px;
 }
+
+/* Responsive design */
+@media screen and (max-width: 992px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  h2 {
+    font-size: 64px;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  /* buttons */
+
+  .btn {
+    position: relative;
+    padding: 10px 32px;
+    border-radius: 24px;
+  }
+
+  .btn.light {
+    background-color: var(--main-color);
+  }
+
+  .btn.dark {
+    background-color: var(--btn-color);
+  }
+
+  /* .btn.download-icon::after {
+    content: url("../images/download.svg");
+    position: absolute;
+    right: 32px;
+    margin-left: 10px;
+    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-40%);
+  } */
+
+  /* NAVBAR DESIGN */
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #eeeeee;
+  }
+  .navbar {
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  .nav-item .nav-link {
+    color: var(--text-color);
+  }
+
+  .navbar-toggler {
+    background-color: var(--btn-color);
+    /* color: #ffffff; */
+  }
+
+  /* HERO SECTION DESIGN */
+  .main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px 0;
+  }
+  .heading {
+    font-size: 96px;
+    font-weight: bold;
+  }
+  .sub-heading {
+    color: #00adb5;
+  }
+  .buttons {
+    display: flex;
+    gap: 24px;
+  }
+  .buttons button {
+    color: #eeeeee;
+  }
+  .down_arrow {
+    margin-left: 300px;
+  }
+  .down_arrow img {
+    cursor: pointer;
+  }
+
+  /* ABOUT SECTION */
+
+  .about {
+    display: flex;
+    padding: 120px 0;
+    /* justify-content: space-between;
+    align-items: center; */
+    /* flex-wrap: wrap;
+    flex-basis: 50%; */
+  }
+  .about-left {
+    width: 50%;
+    padding: 0 60px 0 120px;
+  }
+
+  .about-text {
+    width: 389px;
+  }
+  .me {
+    color: var(--main-color);
+  }
+  .read-more {
+    font-weight: bold;
+  }
+
+  /* PORTFOLIO SECTION */
+  .portfolio {
+    width: 100%;
+    background: url("../images/Wroks-bg.png");
+    background-size: cover;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 120px 0;
+  }
+
+  .portfolio-content {
+    margin: 268px 120px;
+  }
+
+  .nav-pills {
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+
+  .nav-pills .nav-link {
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-pills .nav-link.active {
+    background: #00d1d1;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Shadow for text */
+  }
+
+  .tab-content {
+    /* background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px; */
+    text-align: left;
+  }
+
+  .section-title {
+    /* text-align: left; */
+    /* font-size: 2.5rem; */
+    font-weight: bold;
+  }
+
+  .highlight {
+    color: #00d1d1; /* Highlighted color */
+  }
+
+  .filter-buttons .btn {
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: 500;
+  }
+
+  .filter-buttons .btn.active {
+    background-color: #00d1d1;
+    color: white;
+  }
+
+  .project-card {
+    width: 368px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .work-img {
+    width: 50%;
+    height: auto;
+    padding: 60px 51px;
+  }
+  /* CONTACT SECTION */
+
+  .contact-section {
+    padding: 120px 0;
+  }
+  .contact-title {
+    /* font-size: 2.5rem; */
+    font-weight: bold;
+    line-height: 130%;
+  }
+  .highlight {
+    color: var(--main-color);
+  }
+  .form-control {
+    background-color: #1c232b;
+    border: none;
+    color: white;
+    height: 59px;
+    margin-bottom: 24px;
+  }
+  .textarea {
+    height: 280px;
+    resize: vertical;
+  }
+  .form-control::placeholder {
+    font-weight: bold;
+    color: #5a5f66;
+  }
+  .btn-custom {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Shadow for text */
+  }
+  .btn-custom img {
+    width: 20px;
+    margin-left: 5px;
+  }
+  .illustration img {
+    max-width: 100%;
+  }
+
+  /* FOOTER SECTION */
+  .footer {
+    text-align: center;
+    padding: 120px 0;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  .policy {
+    padding-top: 92px;
+  }
+  .btn-nav {
+    margin-right: 10px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  .social-icons a {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 48px;
+    height: 48px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    transition: 0.3s;
+  }
+
+  .icons {
+    vertical-align: middle;
+  }
+  .social-icons a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .policy {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 120px 0;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+  }
+  h2 {
+    display: flex;
+    gap: 20px;
+    font-size: 45px;
+    font-weight: 900;
+  }
+  .portfolio-content {
+    margin: 20px;
+  }
+  h2 {
+    display: flex;
+    gap: 20px;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  #element_style {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-left {
+    width: 100%;
+
+}
+}
