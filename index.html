@@ -95,56 +95,218 @@
       <!-- <a href="#">Read more</a> -->
     </section>
 
-    <section class="portfolio">
-      <h2>My recent works</h2>
-      <div class="categories">
-        <span>All</span>
-        <span>UI</span>
-        <span>UX</span>
-        <span>Web Design</span>
-      </div>
-    </section>
     <section class="container py-5 portfolio">
-      <h2 class="section-title">
-        My recent <span class="highlight">works</span>
+      <h2 class="section-title text-left mb-4">
+        My Recent <span class="highlight">Works</span>
       </h2>
 
-      <!-- Filter Buttons -->
-      <div class="d-flex justify-content-center filter-buttons mt-3">
-        <button class="btn btn-dark active" data-filter="all">All</button>
-        <button class="btn btn-outline-light" data-filter="ui">UI</button>
-        <button class="btn btn-outline-light" data-filter="ux">UX</button>
-        <button class="btn btn-outline-light" data-filter="web">
-          Web Design
-        </button>
-      </div>
+      <!-- Tabs -->
+      <ul class="nav nav-pills mb-3 d-flex gap-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-all-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-all"
+            type="button"
+            role="tab"
+            aria-controls="pills-all"
+            aria-selected="true"
+          >
+            All
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-ui-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-ui"
+            type="button"
+            role="tab"
+            aria-controls="pills-ui"
+            aria-selected="false"
+          >
+            UI
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-ux-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-ux"
+            type="button"
+            role="tab"
+            aria-controls="pills-ux"
+            aria-selected="false"
+          >
+            UX
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-web-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-web"
+            type="button"
+            role="tab"
+            aria-controls="pills-web"
+            aria-selected="false"
+          >
+            Web Design
+          </button>
+        </li>
+      </ul>
 
-      <!-- Projects Grid -->
-      <div class="row mt-4 g-4">
-        <div class="col-md-4 col-sm-12 project-card" data-category="ui">
-          <img src="project1.jpg" alt="Project 1" />
+      <!-- Tab Content -->
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-all"
+          role="tabpanel"
+          aria-labelledby="pills-all-tab"
+        >
+          <!-- All projects will be displayed here. -->
+          <!-- Projects Grid -->
+          <div class="row mt-4 gap-3">
+            <div class="col-md-4 col-sm-12 project-card" data-category="ui">
+              <img
+                src="./assets/images/work01.png"
+                alt="Project 1"
+                class="work-img"
+              />
+            </div>
+            <div class="col-md-4 col-sm-12 project-card" data-category="web">
+              <img
+                src="./assets/images/Wrok02.png"
+                alt="Project 2"
+                class="work-img"
+              />
+            </div>
+            <div class="col-md-4 col-sm-12 project-card" data-category="ux">
+              <img
+                src="./assets/images/work03.png"
+                alt="Project 3"
+                class="work-img"
+              />
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-12 project-card" data-category="web">
-          <img src="project2.jpg" alt="Project 2" />
+        <div
+          class="tab-pane fade"
+          id="pills-ui"
+          role="tabpanel"
+          aria-labelledby="pills-ui-tab"
+        >
+          <!-- UI design projects go here. -->
         </div>
-        <div class="col-md-4 col-sm-12 project-card" data-category="ux">
-          <img src="project3.jpg" alt="Project 3" />
+        <div
+          class="tab-pane fade"
+          id="pills-ux"
+          role="tabpanel"
+          aria-labelledby="pills-ux-tab"
+        >
+          <!-- UX design projects go here. -->
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-web"
+          role="tabpanel"
+          aria-labelledby="pills-web-tab"
+        >
+          <!-- Web design projects go here. -->
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Got a project in mind?</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <div class="container contact-section">
+      <div class="row align-items-center">
+        <!-- left side -->
+        <div class="col-lg-6 text-lg-start text-center mb-4 mb-lg-0">
+          <h2 class="contact-title">
+            Got a project in <br />
+            <span class="highlight">mind?</span>
+          </h2>
+          <div class="illustration text-lg-center mt-4">
+            <img
+              src="./assets/images/contact form image.png"
+              alt="Illustration"
+            />
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="col-lg-6">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Your Message</label>
+                <textarea
+                  class="form-control textarea"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="col-12 text-start">
+                <button type="submit" class="btn btn-custom">
+                  Send Message <img src="./assets/images/send.svg" alt="Send" />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>Terms of Service - Privacy Policy</p>
+    </footer>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="mb-3">
+          <a href="#"
+            ><img src="./assets/images/home.svg" alt="" class="btn-nav" />
+            Home</a
+          >
+          <a href="#"
+            ><img src="./assets/images/user.svg" alt="" class="btn-nav" /> About
+            me</a
+          >
+          <a href="#"
+            ><img src="./assets/images/phone.svg" alt="" class="btn-nav" />
+            Contact</a
+          >
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="icons"
+            ><img src="./assets/images/facebook.svg" alt="facebook"
+          /></a>
+          <a href="#" class="icons"
+            ><img src="./assets/images/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#" class="icons"
+            ><img src="./assets/images/twitter.svg" alt="twitter"
+          /></a>
+          <a href="#" class="icons"
+            ><img src="./assets/images/youtube.svg" alt="youtube"
+          /></a>
+        </div>
+
+        <div class="policy">
+          <a href="#">Terms of Service</a> - <a href="#">Privacy Policy</a>
+        </div>
+      </div>
     </footer>
 
     <script
