@@ -14,9 +14,6 @@
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -120,6 +117,14 @@ p {
   /* flex-wrap: wrap;
   flex-basis: 50%; */
 }
+.about-left {
+  width: 50%;
+  padding: 0 60px 0 120px;
+}
+
+.about-text {
+  width: 389px;
+}
 .me {
   color: var(--main-color);
 }
@@ -129,10 +134,16 @@ p {
 
 /* PORTFOLIO SECTION */
 .portfolio {
-  background: url("background-pattern.png") no-repeat center center;
+  width: 100%;
+  background: url("../images/Wroks-bg.png");
   background-size: cover;
   color: white;
   font-family: "Poppins", sans-serif;
+  padding: 120px 0;
+}
+
+.portfolio-content {
+  margin: 268px 120px;
 }
 
 .nav-pills {
@@ -155,8 +166,6 @@ p {
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Shadow for text */
 }
-
-
 
 .tab-content {
   /* background: rgba(255, 255, 255, 0.05);
@@ -188,6 +197,7 @@ p {
 }
 
 .project-card {
+  width: 368px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   padding: 15px;
@@ -205,7 +215,7 @@ p {
   transform: scale(1.05);
 }
 
-.work-img{
+.work-img {
   width: 50%;
   height: auto;
   padding: 60px 51px;
@@ -213,7 +223,7 @@ p {
 /* CONTACT SECTION */
 
 .contact-section {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 .contact-title {
   /* font-size: 2.5rem; */
@@ -224,19 +234,19 @@ p {
   color: var(--main-color);
 }
 .form-control {
-  background-color: #1C232B;
+  background-color: #1c232b;
   border: none;
   color: white;
   height: 59px;
   margin-bottom: 24px;
 }
-.textarea{
+.textarea {
   height: 280px;
   resize: vertical;
 }
 .form-control::placeholder {
   font-weight: bold;
-  color: #5A5F66;
+  color: #5a5f66;
 }
 .btn-custom {
   background-color: var(--main-color);
@@ -257,7 +267,7 @@ p {
 /* FOOTER SECTION */
 .footer {
   text-align: center;
-  padding: 40px 0;
+  padding: 120px 0;
 }
 .footer a {
   text-decoration: none;
@@ -265,10 +275,13 @@ p {
   font-size: 18px;
   margin: 0 15px;
 }
-.btn-nav{
+.policy {
+  padding-top: 92px;
+}
+.btn-nav {
   margin-right: 10px;
 }
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +291,7 @@ p {
 .social-icons a {
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
+  align-items: center; /* Center vertically */
   width: 48px;
   height: 48px;
   line-height: 40px;
@@ -288,7 +301,7 @@ p {
   transition: 0.3s;
 }
 
-.icons{
+.icons {
   vertical-align: middle;
 }
 .social-icons a:hover {
